@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Night_Porter_Table_View" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceU-CQ-dOw">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" id="FW2-VA-mqe">
+                                        <switch key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="CCJ-nn-XWM">
+                                            <rect key="frame" x="20" y="7" width="51" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="onTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="toggleDarkMode:" destination="BYZ-38-t0r" eventType="valueChanged" id="RgH-mu-qIQ"/>
+                                            </connections>
+                                        </switch>
+                                    </barButtonItem>
+                                    <barButtonItem enabled="NO" title="dark mode" id="kei-p1-YCj"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="gVs-pQ-sZm"/>
+                                    <barButtonItem title="reset" id="QaT-KV-LHy">
+                                        <connections>
+                                            <action selector="resetList:" destination="BYZ-38-t0r" id="LCA-bn-YjH"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5sr-cv-ru5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="CzB-hB-y9y"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="dB4-Uj-5vY"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ceU-CQ-dOw" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="4ds-oi-yZM"/>
+                            <constraint firstItem="ceU-CQ-dOw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5jI-xe-D0T"/>
+                            <constraint firstAttribute="trailing" secondItem="5sr-cv-ru5" secondAttribute="trailing" id="Cui-HD-Had"/>
+                            <constraint firstItem="5sr-cv-ru5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="I5E-GY-cln"/>
+                            <constraint firstItem="ceU-CQ-dOw" firstAttribute="trailing" secondItem="5sr-cv-ru5" secondAttribute="trailing" id="UVH-TT-hAq"/>
+                            <constraint firstItem="ceU-CQ-dOw" firstAttribute="top" secondItem="5sr-cv-ru5" secondAttribute="bottom" id="WlG-Ht-ToH"/>
+                            <constraint firstItem="ceU-CQ-dOw" firstAttribute="leading" secondItem="5sr-cv-ru5" secondAttribute="leading" id="mkz-Cc-n31"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="taskTableView" destination="5sr-cv-ru5" id="tAn-gQ-xgw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="300" y="399"/>
+        </scene>
+    </scenes>
+</document>

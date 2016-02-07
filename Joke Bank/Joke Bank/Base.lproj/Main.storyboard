@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="plJ-yV-SsN">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="oPe-nV-KZc">
+            <objects>
+                <navigationController id="plJ-yV-SsN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Epu-4w-8Ae">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VN8-g3-n49"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hJO-My-p7Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-356" y="347"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Joke_Bank" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yXq-kA-qaX">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yXq-kA-qaX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ArL-c9-F3Y"/>
+                            <constraint firstAttribute="trailing" secondItem="yXq-kA-qaX" secondAttribute="trailing" id="PWA-d5-bEZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yXq-kA-qaX" secondAttribute="bottom" id="jtL-U9-tAd"/>
+                            <constraint firstItem="yXq-kA-qaX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="m1O-Xf-Ect"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4BI-CO-TAa"/>
+                    <connections>
+                        <outlet property="tableView" destination="yXq-kA-qaX" id="sdr-wq-Chr"/>
+                        <segue destination="Oy5-ZH-KLH" kind="show" identifier="CollectionToJokeSegue" id="pHr-HK-T1I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="328"/>
+        </scene>
+        <!--Jokes View Controller-->
+        <scene sceneID="mu7-0c-Xz7">
+            <objects>
+                <viewController id="Oy5-ZH-KLH" customClass="JokesViewController" customModule="Joke_Bank" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vuU-eZ-zcy"/>
+                        <viewControllerLayoutGuide type="bottom" id="cmx-05-hCr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pD0-Kc-pqR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2nw-do-D0l">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2nw-do-D0l" firstAttribute="top" secondItem="vuU-eZ-zcy" secondAttribute="bottom" id="Ayq-8R-QCx"/>
+                            <constraint firstAttribute="trailing" secondItem="2nw-do-D0l" secondAttribute="trailing" id="VXy-3M-Tbe"/>
+                            <constraint firstItem="cmx-05-hCr" firstAttribute="top" secondItem="2nw-do-D0l" secondAttribute="bottom" id="v21-HG-p7Z"/>
+                            <constraint firstItem="2nw-do-D0l" firstAttribute="leading" secondItem="pD0-Kc-pqR" secondAttribute="leading" id="wRT-Xn-2Vx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="2nw-do-D0l" id="KHm-gf-9UI"/>
+                        <segue destination="2kl-OY-blx" kind="show" identifier="JokeToTextSegue" id="TXH-jM-w23"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QUc-x2-v3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056" y="353"/>
+        </scene>
+        <!--Joke Text View Controller-->
+        <scene sceneID="Enw-Uk-G6P">
+            <objects>
+                <viewController id="2kl-OY-blx" customClass="JokeTextViewController" customModule="Joke_Bank" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FZE-24-Uij"/>
+                        <viewControllerLayoutGuide type="bottom" id="r6m-db-Ked"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dCs-9w-gt7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BEL-U6-2mI">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BEL-U6-2mI" secondAttribute="trailing" id="3Y2-nL-0zL"/>
+                            <constraint firstItem="r6m-db-Ked" firstAttribute="top" secondItem="BEL-U6-2mI" secondAttribute="bottom" id="KTS-oq-PdC"/>
+                            <constraint firstItem="BEL-U6-2mI" firstAttribute="top" secondItem="FZE-24-Uij" secondAttribute="bottom" id="NSe-oY-8aT"/>
+                            <constraint firstItem="BEL-U6-2mI" firstAttribute="leading" secondItem="dCs-9w-gt7" secondAttribute="leading" id="tP9-oB-Yld"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="BEL-U6-2mI" id="Idg-UJ-cN5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J1O-Ez-IvM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1732" y="353"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TravelPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vacation Planner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teU-oB-GRq">
+                                <rect key="frame" x="20" y="25" width="560" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qbr-k4-Ymd">
+                                <rect key="frame" x="200" y="66" width="200" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="i3A-lp-iMw"/>
+                                    <constraint firstAttribute="height" constant="85" id="wCZ-jb-ZWM"/>
+                                </constraints>
+                            </pickerView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZzN-6c-uHh">
+                                <rect key="frame" x="276" y="202" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Outside of the USA?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtT-Nl-20s">
+                                <rect key="frame" x="15" y="166" width="570" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9d-5D-nts">
+                                <rect key="frame" x="216" y="253" width="168" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="KIJ-fs-hbO"/>
+                                    <constraint firstAttribute="width" constant="168" id="KT3-FS-Yke"/>
+                                </constraints>
+                                <state key="normal" title="Where Should I Go?"/>
+                                <connections>
+                                    <action selector="whereTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kw6-0V-x3f"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mdp-Hi-Low">
+                                <rect key="frame" x="163" y="311" width="275" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="Je9-io-4TY"/>
+                                    <constraint firstAttribute="width" constant="275" id="khC-dr-YXL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QjT-3d-ulr">
+                                <rect key="frame" x="10" y="491" width="580" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="bMo-mK-bp0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81U-cO-eF2">
+                                <rect key="frame" x="236" y="532" width="128" height="30"/>
+                                <state key="normal" title="Share to Facebook"/>
+                                <connections>
+                                    <action selector="shareToFb:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GJH-Am-Nzz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="teU-oB-GRq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="4Ha-5n-l4X"/>
+                            <constraint firstItem="f9d-5D-nts" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8I7-hY-TMA"/>
+                            <constraint firstItem="ZzN-6c-uHh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Asb-O8-9n4"/>
+                            <constraint firstItem="teU-oB-GRq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="BMj-a8-lSZ"/>
+                            <constraint firstItem="81U-cO-eF2" firstAttribute="top" secondItem="QjT-3d-ulr" secondAttribute="bottom" constant="20" id="GLJ-Pc-w1O"/>
+                            <constraint firstItem="mdp-Hi-Low" firstAttribute="top" secondItem="f9d-5D-nts" secondAttribute="bottom" constant="15" id="Gb7-td-hPs"/>
+                            <constraint firstItem="ZzN-6c-uHh" firstAttribute="top" secondItem="vtT-Nl-20s" secondAttribute="bottom" constant="15" id="I0o-hP-bBo"/>
+                            <constraint firstAttribute="trailing" secondItem="QjT-3d-ulr" secondAttribute="trailing" constant="10" id="MqU-za-XFs"/>
+                            <constraint firstItem="QjT-3d-ulr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="QoP-zs-opn"/>
+                            <constraint firstItem="QjT-3d-ulr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rtl-7e-eGu"/>
+                            <constraint firstItem="81U-cO-eF2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VqB-9O-8xH"/>
+                            <constraint firstItem="QjT-3d-ulr" firstAttribute="top" secondItem="mdp-Hi-Low" secondAttribute="bottom" constant="10" id="Vqu-c9-DAc"/>
+                            <constraint firstAttribute="trailing" secondItem="vtT-Nl-20s" secondAttribute="trailing" constant="15" id="Z3o-1z-sQU"/>
+                            <constraint firstItem="f9d-5D-nts" firstAttribute="top" secondItem="ZzN-6c-uHh" secondAttribute="bottom" constant="20" id="ZKJ-tQ-sex"/>
+                            <constraint firstItem="qbr-k4-Ymd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aQ2-Jr-N0f"/>
+                            <constraint firstAttribute="trailing" secondItem="teU-oB-GRq" secondAttribute="trailing" constant="20" id="dSf-4Z-fkK"/>
+                            <constraint firstItem="mdp-Hi-Low" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f01-v7-HcM"/>
+                            <constraint firstItem="vtT-Nl-20s" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="fF9-r6-GAb"/>
+                            <constraint firstItem="vtT-Nl-20s" firstAttribute="top" secondItem="qbr-k4-Ymd" secondAttribute="bottom" constant="15" id="s5P-Mo-cru"/>
+                            <constraint firstItem="qbr-k4-Ymd" firstAttribute="top" secondItem="teU-oB-GRq" secondAttribute="bottom" constant="15" id="zqr-Zw-tMV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="destinationLabel" destination="QjT-3d-ulr" id="qBi-0A-hr5"/>
+                        <outlet property="imageView" destination="mdp-Hi-Low" id="161-Qh-6bu"/>
+                        <outlet property="mySwitch" destination="ZzN-6c-uHh" id="iU0-bh-E7g"/>
+                        <outlet property="pickerView" destination="qbr-k4-Ymd" id="6kU-HK-RPV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>

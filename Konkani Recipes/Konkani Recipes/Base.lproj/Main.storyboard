@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Vdz-6r-mSY">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="nek-f9-m98">
+            <objects>
+                <navigationController id="Vdz-6r-mSY" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="k6i-BO-sCB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ShK-lN-haq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KrP-Sg-Vw7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3819" y="289"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="Konkani_Recipes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rsc-p6-klF">
+                                <rect key="frame" x="0.0" y="28" width="600" height="572"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rsc-p6-klF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4mn-zQ-Bh1"/>
+                            <constraint firstAttribute="trailing" secondItem="rsc-p6-klF" secondAttribute="trailing" id="7SW-uG-gbE"/>
+                            <constraint firstItem="rsc-p6-klF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="PlJ-7i-Don"/>
+                            <constraint firstItem="rsc-p6-klF" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="UNO-WZ-sle"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="arL-NM-g45"/>
+                    <connections>
+                        <outlet property="tableView" destination="rsc-p6-klF" id="cPT-bi-Eiv"/>
+                        <segue destination="tEY-Gr-u2u" kind="show" identifier="recipeListToRecipeDetailSegue" id="thu-Gk-m5x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3113" y="289"/>
+        </scene>
+        <!--Recipe Detail View Controller-->
+        <scene sceneID="4zw-PA-FYF">
+            <objects>
+                <viewController id="tEY-Gr-u2u" customClass="RecipeDetailViewController" customModule="Konkani_Recipes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CDg-aC-a63"/>
+                        <viewControllerLayoutGuide type="bottom" id="AS9-4t-DFD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4pn-BS-N0v">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ls8-eh-jhc">
+                                <rect key="frame" x="273" y="139" width="54" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvk-gW-bcx">
+                                <rect key="frame" x="272" y="72" width="56" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ls8-eh-jhc" firstAttribute="top" secondItem="qvk-gW-bcx" secondAttribute="bottom" constant="39.5" id="8ny-EP-F2K"/>
+                            <constraint firstItem="ls8-eh-jhc" firstAttribute="centerX" secondItem="4pn-BS-N0v" secondAttribute="centerX" id="Cfb-Nd-hHt"/>
+                            <constraint firstItem="qvk-gW-bcx" firstAttribute="centerX" secondItem="4pn-BS-N0v" secondAttribute="centerX" id="XlV-ar-hcX"/>
+                            <constraint firstItem="qvk-gW-bcx" firstAttribute="top" secondItem="CDg-aC-a63" secondAttribute="bottom" constant="8" id="jTC-2h-xbG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="qvk-gW-bcx" id="Szg-Wv-TC1"/>
+                        <outlet property="recipeLabel" destination="ls8-eh-jhc" id="J2h-Ua-rfy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="adu-e6-4HY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2412" y="289"/>
+        </scene>
+    </scenes>
+</document>

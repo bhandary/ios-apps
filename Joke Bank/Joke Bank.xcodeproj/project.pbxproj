@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		932E29561C4DA4A500355057 /* JokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932E29551C4DA4A500355057 /* JokesViewController.swift */; };
+		932E29581C4DAC4300355057 /* JokeTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932E29571C4DAC4300355057 /* JokeTextViewController.swift */; };
+		93D6E0F41C4D822C0032CFCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D6E0F31C4D822C0032CFCE /* AppDelegate.swift */; };
+		93D6E0F61C4D822C0032CFCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D6E0F51C4D822C0032CFCE /* ViewController.swift */; };
+		93D6E0F91C4D822C0032CFCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93D6E0F71C4D822C0032CFCE /* Main.storyboard */; };
+		93D6E0FC1C4D822C0032CFCE /* Joke_Bank.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93D6E0FA1C4D822C0032CFCE /* Joke_Bank.xcdatamodeld */; };
+		93D6E0FE1C4D822C0032CFCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93D6E0FD1C4D822C0032CFCE /* Assets.xcassets */; };
+		93D6E1011C4D822C0032CFCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93D6E0FF1C4D822C0032CFCE /* LaunchScreen.storyboard */; };
+		93D6E10C1C4D84060032CFCE /* Joke+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D6E1081C4D84060032CFCE /* Joke+CoreDataProperties.swift */; };
+		93D6E10D1C4D84060032CFCE /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D6E1091C4D84060032CFCE /* Joke.swift */; };
+		93D6E10F1C4D84060032CFCE /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D6E10B1C4D84060032CFCE /* Collection.swift */; };
+		93F947041C4F5B640048342D /* Collection+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F947031C4F5B640048342D /* Collection+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		932E29551C4DA4A500355057 /* JokesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokesViewController.swift; sourceTree = "<group>"; };
+		932E29571C4DAC4300355057 /* JokeTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeTextViewController.swift; sourceTree = "<group>"; };
+		93D6E0F01C4D822B0032CFCE /* Joke Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Joke Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93D6E0F31C4D822C0032CFCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		93D6E0F51C4D822C0032CFCE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		93D6E0F81C4D822C0032CFCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93D6E0FB1C4D822C0032CFCE /* Joke_Bank.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Joke_Bank.xcdatamodel; sourceTree = "<group>"; };
+		93D6E0FD1C4D822C0032CFCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93D6E1001C4D822C0032CFCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93D6E1021C4D822C0032CFCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93D6E1081C4D84060032CFCE /* Joke+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Joke+CoreDataProperties.swift"; path = "../Joke+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		93D6E1091C4D84060032CFCE /* Joke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Joke.swift; path = ../Joke.swift; sourceTree = "<group>"; };
+		93D6E10B1C4D84060032CFCE /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Collection.swift; path = ../Collection.swift; sourceTree = "<group>"; };
+		93F947031C4F5B640048342D /* Collection+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Collection+CoreDataProperties.swift"; path = "../Collection+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93D6E0ED1C4D822B0032CFCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93D6E0E71C4D822B0032CFCE = {
+			isa = PBXGroup;
+			children = (
+				93D6E0F21C4D822B0032CFCE /* Joke Bank */,
+				93D6E0F11C4D822B0032CFCE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93D6E0F11C4D822B0032CFCE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93D6E0F01C4D822B0032CFCE /* Joke Bank.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93D6E0F21C4D822B0032CFCE /* Joke Bank */ = {
+			isa = PBXGroup;
+			children = (
+				93D6E0F31C4D822C0032CFCE /* AppDelegate.swift */,
+				93D6E0F51C4D822C0032CFCE /* ViewController.swift */,
+				932E29551C4DA4A500355057 /* JokesViewController.swift */,
+				932E29571C4DAC4300355057 /* JokeTextViewController.swift */,
+				93D6E1101C4D84490032CFCE /* Models */,
+				93D6E0F71C4D822C0032CFCE /* Main.storyboard */,
+				93D6E0FD1C4D822C0032CFCE /* Assets.xcassets */,
+				93D6E0FF1C4D822C0032CFCE /* LaunchScreen.storyboard */,
+				93D6E1021C4D822C0032CFCE /* Info.plist */,
+				93D6E0FA1C4D822C0032CFCE /* Joke_Bank.xcdatamodeld */,
+			);
+			path = "Joke Bank";
+			sourceTree = "<group>";
+		};
+		93D6E1101C4D84490032CFCE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				93F947031C4F5B640048342D /* Collection+CoreDataProperties.swift */,
+				93D6E1081C4D84060032CFCE /* Joke+CoreDataProperties.swift */,
+				93D6E1091C4D84060032CFCE /* Joke.swift */,
+				93D6E10B1C4D84060032CFCE /* Collection.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93D6E0EF1C4D822B0032CFCE /* Joke Bank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93D6E1051C4D822C0032CFCE /* Build configuration list for PBXNativeTarget "Joke Bank" */;
+			buildPhases = (
+				93D6E0EC1C4D822B0032CFCE /* Sources */,
+				93D6E0ED1C4D822B0032CFCE /* Frameworks */,
+				93D6E0EE1C4D822B0032CFCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Joke Bank";
+			productName = "Joke Bank";
+			productReference = 93D6E0F01C4D822B0032CFCE /* Joke Bank.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93D6E0E81C4D822B0032CFCE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Manju Bhandary";
+				TargetAttributes = {
+					93D6E0EF1C4D822B0032CFCE = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 93D6E0EB1C4D822B0032CFCE /* Build configuration list for PBXProject "Joke Bank" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93D6E0E71C4D822B0032CFCE;
+			productRefGroup = 93D6E0F11C4D822B0032CFCE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93D6E0EF1C4D822B0032CFCE /* Joke Bank */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93D6E0EE1C4D822B0032CFCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93D6E1011C4D822C0032CFCE /* LaunchScreen.storyboard in Resources */,
+				93D6E0FE1C4D822C0032CFCE /* Assets.xcassets in Resources */,
+				93D6E0F91C4D822C0032CFCE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93D6E0EC1C4D822B0032CFCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93D6E10C1C4D84060032CFCE /* Joke+CoreDataProperties.swift in Sources */,
+				93D6E10D1C4D84060032CFCE /* Joke.swift in Sources */,
+				932E29581C4DAC4300355057 /* JokeTextViewController.swift in Sources */,
+				93F947041C4F5B640048342D /* Collection+CoreDataProperties.swift in Sources */,
+				93D6E0F61C4D822C0032CFCE /* ViewController.swift in Sources */,
+				93D6E0FC1C4D822C0032CFCE /* Joke_Bank.xcdatamodeld in Sources */,
+				93D6E10F1C4D84060032CFCE /* Collection.swift in Sources */,
+				93D6E0F41C4D822C0032CFCE /* AppDelegate.swift in Sources */,
+				932E29561C4DA4A500355057 /* JokesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		93D6E0F71C4D822C0032CFCE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93D6E0F81C4D822C0032CFCE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		93D6E0FF1C4D822C0032CFCE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93D6E1001C4D822C0032CFCE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93D6E1031C4D822C0032CFCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		93D6E1041C4D822C0032CFCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93D6E1061C4D822C0032CFCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Joke Bank/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bhandary.Joke-Bank";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		93D6E1071C4D822C0032CFCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Joke Bank/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bhandary.Joke-Bank";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93D6E0EB1C4D822B0032CFCE /* Build configuration list for PBXProject "Joke Bank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93D6E1031C4D822C0032CFCE /* Debug */,
+				93D6E1041C4D822C0032CFCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93D6E1051C4D822C0032CFCE /* Build configuration list for PBXNativeTarget "Joke Bank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93D6E1061C4D822C0032CFCE /* Debug */,
+				93D6E1071C4D822C0032CFCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		93D6E0FA1C4D822C0032CFCE /* Joke_Bank.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				93D6E0FB1C4D822C0032CFCE /* Joke_Bank.xcdatamodel */,
+			);
+			currentVersion = 93D6E0FB1C4D822C0032CFCE /* Joke_Bank.xcdatamodel */;
+			path = Joke_Bank.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 93D6E0E81C4D822B0032CFCE /* Project object */;
+}
