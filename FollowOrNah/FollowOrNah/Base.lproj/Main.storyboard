@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -19,7 +20,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YZ7-G5-kZr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1730" y="255"/>
+            <point key="canvasLocation" x="-1730" y="418"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -58,11 +59,82 @@
                     <navigationItem key="navigationItem" id="jL3-LB-aCf"/>
                     <connections>
                         <segue destination="H9F-Vg-7X3" kind="presentation" identifier="chooseAccountSegue" id="1TF-9X-m1s"/>
+                        <segue destination="uaV-KL-Gzx" kind="show" identifier="decideSegue" id="LKI-n2-bbb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1020" y="258"/>
+            <point key="canvasLocation" x="-1014" y="418"/>
+        </scene>
+        <!--Decide View Controller-->
+        <scene sceneID="NKX-nj-VW2">
+            <objects>
+                <viewController id="uaV-KL-Gzx" customClass="DecideViewController" customModule="FollowOrNah" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cUK-ZS-FvT"/>
+                        <viewControllerLayoutGuide type="bottom" id="3PH-LF-lCu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nZV-v3-hpH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are following 300 people" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjy-CO-UAd">
+                                <rect key="frame" x="189" y="100" width="222" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNa-L0-hbF">
+                                <rect key="frame" x="261" y="153" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hm5-Jq-Dtg">
+                                <rect key="frame" x="200" y="184" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="URc-SY-wjo"/>
+                                    <constraint firstAttribute="width" constant="200" id="fuO-Sn-OjG"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wde-F5-0TU">
+                                <rect key="frame" x="70" y="432" width="60" height="30"/>
+                                <state key="normal" title="Unfollow"/>
+                                <connections>
+                                    <action selector="unfollowTapped:" destination="uaV-KL-Gzx" eventType="touchUpInside" id="Sjc-te-s5Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRo-Fa-kL2">
+                                <rect key="frame" x="441" y="432" width="104" height="30"/>
+                                <state key="normal" title="Keep Following"/>
+                                <connections>
+                                    <action selector="keepFollowingTapped:" destination="uaV-KL-Gzx" eventType="touchUpInside" id="Psd-9k-EqN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JNa-L0-hbF" firstAttribute="centerX" secondItem="nZV-v3-hpH" secondAttribute="centerX" id="43j-RN-UDL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PRo-Fa-kL2" secondAttribute="trailing" constant="35" id="6TU-VD-q54"/>
+                            <constraint firstItem="JNa-L0-hbF" firstAttribute="top" secondItem="xjy-CO-UAd" secondAttribute="bottom" constant="32" id="721-g3-GtX"/>
+                            <constraint firstItem="wde-F5-0TU" firstAttribute="leading" secondItem="nZV-v3-hpH" secondAttribute="leadingMargin" constant="50" id="Ave-r9-Agv"/>
+                            <constraint firstItem="PRo-Fa-kL2" firstAttribute="top" secondItem="cUK-ZS-FvT" secondAttribute="bottom" constant="368" id="YHu-bj-KuB"/>
+                            <constraint firstItem="hm5-Jq-Dtg" firstAttribute="top" secondItem="JNa-L0-hbF" secondAttribute="bottom" constant="10" id="cDI-bT-cCr"/>
+                            <constraint firstItem="xjy-CO-UAd" firstAttribute="top" secondItem="nZV-v3-hpH" secondAttribute="topMargin" constant="100" id="dIg-hz-Hal"/>
+                            <constraint firstItem="wde-F5-0TU" firstAttribute="top" secondItem="cUK-ZS-FvT" secondAttribute="bottom" constant="368" id="dWh-9g-o9p"/>
+                            <constraint firstItem="xjy-CO-UAd" firstAttribute="centerX" secondItem="nZV-v3-hpH" secondAttribute="centerX" id="f3H-AZ-G0r"/>
+                            <constraint firstItem="hm5-Jq-Dtg" firstAttribute="centerX" secondItem="nZV-v3-hpH" secondAttribute="centerX" id="fI5-SD-kV8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="friendLabel" destination="xjy-CO-UAd" id="5z8-Pr-KAV"/>
+                        <outlet property="imageView" destination="hm5-Jq-Dtg" id="2rG-uu-CID"/>
+                        <outlet property="usernameLabel" destination="JNa-L0-hbF" id="gk0-jM-zQK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZgP-0B-Oju" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-259" y="418"/>
         </scene>
         <!--Select Account View Controller-->
         <scene sceneID="0B6-Mq-gOm">
@@ -95,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f2v-L4-e2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-306" y="259"/>
+            <point key="canvasLocation" x="-300" y="-261"/>
         </scene>
     </scenes>
 </document>

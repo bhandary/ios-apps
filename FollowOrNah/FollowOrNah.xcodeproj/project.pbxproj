@@ -13,6 +13,8 @@
 		938FC1C71C65134500460C76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938FC1C61C65134500460C76 /* Assets.xcassets */; };
 		938FC1CA1C65134500460C76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 938FC1C81C65134500460C76 /* LaunchScreen.storyboard */; };
 		938FC1D21C65618000460C76 /* SelectAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938FC1D11C65618000460C76 /* SelectAccountViewController.swift */; };
+		93A8262A1C6E9A44009069C1 /* DecideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A826291C6E9A44009069C1 /* DecideViewController.swift */; };
+		93A8262C1C6EB115009069C1 /* TwitterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A8262B1C6EB115009069C1 /* TwitterUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		938FC1C91C65134500460C76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		938FC1CB1C65134500460C76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		938FC1D11C65618000460C76 /* SelectAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAccountViewController.swift; sourceTree = "<group>"; };
+		93A826291C6E9A44009069C1 /* DecideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecideViewController.swift; sourceTree = "<group>"; };
+		93A8262B1C6EB115009069C1 /* TwitterUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				938FC1BF1C65134500460C76 /* AppDelegate.swift */,
 				938FC1C11C65134500460C76 /* SignInViewController.swift */,
 				938FC1D11C65618000460C76 /* SelectAccountViewController.swift */,
+				93A826291C6E9A44009069C1 /* DecideViewController.swift */,
+				93A8262B1C6EB115009069C1 /* TwitterUser.swift */,
 				938FC1C31C65134500460C76 /* Main.storyboard */,
 				938FC1C61C65134500460C76 /* Assets.xcassets */,
 				938FC1C81C65134500460C76 /* LaunchScreen.storyboard */,
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93A8262C1C6EB115009069C1 /* TwitterUser.swift in Sources */,
 				938FC1D21C65618000460C76 /* SelectAccountViewController.swift in Sources */,
 				938FC1C21C65134500460C76 /* SignInViewController.swift in Sources */,
+				93A8262A1C6E9A44009069C1 /* DecideViewController.swift in Sources */,
 				938FC1C01C65134500460C76 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +296,7 @@
 				938FC1D01C65134500460C76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

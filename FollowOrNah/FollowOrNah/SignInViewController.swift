@@ -28,6 +28,9 @@ class SignInViewController: UIViewController {
                     print("no accounts")
                 } else if allAccounts.count == 1 {
                     print("They only have one, let's use it")
+                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                        self.performSegueWithIdentifier("decideSegue", sender: allAccounts.first)
+                    })
                 } else {
                     print("They have more than one...let's ask which one they want.")
                     dispatch_async(dispatch_get_main_queue(), { () -> Void in
@@ -50,10 +53,14 @@ class SignInViewController: UIViewController {
             
             
         }
+        if segue.identifier == "decideSegue" {
+            let decideVC = segue.destinationViewController as! DecideViewController
+            decideVC.account = (sender as! ACAccount)
+        }
     }
     
     func moveToViewControllerWithAccount(account: ACAccount) {
-        print("You made it!")
+        self.performSegueWithIdentifier("decideSegue", sender: account)
     }
 }
 
