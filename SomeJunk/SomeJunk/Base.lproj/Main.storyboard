@@ -28,22 +28,22 @@
                                     <segment title="Second"/>
                                 </segments>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="116" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kim-6i-uyh">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="116" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kim-6i-uyh">
                                 <rect key="frame" x="20" y="108" width="560" height="492"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="116" id="EmF-ui-lcU">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="116" id="EmF-ui-lcU" customClass="ItemCell" customModule="SomeJunk" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="560" height="116"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EmF-ui-lcU" id="zXa-4F-Nbz">
-                                            <rect key="frame" x="0.0" y="0.0" width="560" height="115"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="116"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LY8-4k-CEc">
                                                     <rect key="frame" x="8" y="0.0" width="544" height="107"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a4y-bp-zwG">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="filler" translatesAutoresizingMaskIntoConstraints="NO" id="a4y-bp-zwG">
                                                             <rect key="frame" x="8" y="14" width="80" height="80"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="80" id="Njo-sV-BLt"/>
@@ -90,6 +90,12 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="details" destination="dhU-qB-QEp" id="elu-2m-1N8"/>
+                                            <outlet property="price" destination="is6-sj-Lso" id="pco-pp-h7K"/>
+                                            <outlet property="thumb" destination="a4y-bp-zwG" id="arF-Ed-8FU"/>
+                                            <outlet property="title" destination="k5b-wR-Evp" id="4H5-6B-PBr"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -108,6 +114,10 @@
                     <navigationItem key="navigationItem" id="G8Z-gl-dRK">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="MAr-aX-TaW"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="segment" destination="MlW-up-WS9" id="oHO-9C-ojO"/>
+                        <outlet property="tableView" destination="kim-6i-uyh" id="eAb-vH-V86"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -132,4 +142,7 @@
             <point key="canvasLocation" x="425" y="426"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="filler" width="284" height="177"/>
+    </resources>
 </document>
