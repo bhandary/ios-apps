@@ -17,28 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Is3-HV-ag0">
-                                <rect key="frame" x="20" y="20" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="lLL-kr-SS2"/>
-                                    <constraint firstAttribute="width" constant="30" id="rsr-T0-0Ls"/>
-                                </constraints>
-                                <state key="normal" title="&lt;"/>
-                                <connections>
-                                    <action selector="goBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m9r-lK-lqz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIc-t8-AWZ">
-                                <rect key="frame" x="550" y="20" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="Ahw-b6-i98"/>
-                                    <constraint firstAttribute="height" constant="30" id="jvk-Aa-aud"/>
-                                </constraints>
-                                <state key="normal" title="&gt;"/>
-                                <connections>
-                                    <action selector="goForward:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Pg-ug-5qD"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9Z-fA-i90">
                                 <rect key="frame" x="517" y="20" width="30" height="30"/>
                                 <constraints>
@@ -68,6 +46,28 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIc-t8-AWZ">
+                                <rect key="frame" x="550" y="20" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Ahw-b6-i98"/>
+                                    <constraint firstAttribute="height" constant="30" id="jvk-Aa-aud"/>
+                                </constraints>
+                                <state key="normal" title="&gt;" image="btn_right.png"/>
+                                <connections>
+                                    <action selector="goForward:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Pg-ug-5qD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Is3-HV-ag0">
+                                <rect key="frame" x="20" y="20" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lLL-kr-SS2"/>
+                                    <constraint firstAttribute="width" constant="30" id="rsr-T0-0Ls"/>
+                                </constraints>
+                                <state key="normal" title="&lt;" image="btn_left.png"/>
+                                <connections>
+                                    <action selector="goBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m9r-lK-lqz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -99,4 +99,8 @@
             <point key="canvasLocation" x="694" y="418"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="btn_left.png" width="30" height="30"/>
+        <image name="btn_right.png" width="30" height="30"/>
+    </resources>
 </document>
